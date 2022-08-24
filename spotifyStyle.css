@@ -1,0 +1,148 @@
+body {
+    background-color: rgb(177, 204, 200);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: cursive;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    list-style-type: none;
+    background: black;
+    height: 50px;
+    color: white;
+}
+
+nav ul li {
+    padding: 4px 16px;
+    border-radius: 25px;
+}
+
+nav ul li:hover {
+    /* background: rgb(250, 248, 248); */
+    color: rgb(168, 166, 166);
+    cursor: pointer;
+}
+
+.brand img {
+    height: 50px;
+    border-radius: 50%;
+    filter: invert();
+    margin-left: 15px;
+    padding: 0px 1px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.container {
+    min-height: 70vh;
+    /* vh means % */
+    font-family: cursive;
+    /* background: black; */
+    color: white;
+    display: flex;
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 10px;
+    background: url('bg.jpg') no-repeat center center/cover;
+    /* opacity: 0.2; */
+}
+
+.bottom {
+    position: sticky;
+    background: dimgray;
+    color: white;
+    height: 100px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.bottom img{
+    height: 30px;
+    filter: invert(-1);
+}
+*/
+
+.bottom button {
+    padding: 8px 16px;
+    background: rgb(44, 44, 44);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 16px;
+}
+
+#myProgressBar {
+    width: 80%;
+    cursor: pointer;
+}
+
+.songItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: rgba(34, 34, 34, 0.568);
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border-radius: 20px;
+
+}
+
+.songItem img {
+    width: 40px;
+    height: 35px;
+    padding: 0px 4px;
+    border-radius: 11px;
+}
+
+.timeStamp button {
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: rgb(170, 169, 169);
+    border: none;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.timeStamp {
+    margin: 0px 12px;
+}
+
+.songItemContainer{
+    margin-top: 30px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    filter: invert();
+    transform: scaleX(-1);
+    opacity: 0;
+    transition: opacity is ease-in;
+}

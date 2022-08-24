@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyClone</title>
+    <link rel="stylesheet" href="spotifyStyle.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.jpg" alt="Spotify logo">Spotify</li>
+            <li>Home</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best Song Albumb</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="CoverImg">
+                    <span class="songName">ik dard sabhi ko hota ha</span>
+                    <span class="songListPlay"><span class="timeStamp">03:20 <button type="button" id="1" class="playSong">play</button></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="CoverImg">
+                    <span class="songName">ik dard sabhi ko hota ha</span>
+                    <span class="songListPlay"><span class="timeStamp">03:20 <button type="button" id="2" class="playSong">play</button></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="CoverImg">
+                    <span class="songName">ik dard sabhi ko hota ha</span>
+                    <span class="songListPlay"><span class="timeStamp">03:20 <button type="button" id="3" class="playSong">play</button></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="CoverImg">
+                    <span class="songName">ik dard sabhi ko hota ha</span>
+                    <span class="songListPlay"><span class="timeStamp">03:20 <button type="button" id="4" class="playSong">play</button></span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="songBanner">
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <!-- <img src="gun.png" alt="playForward"> -->
+            <button type="button" id="previous">Prev</button>
+            <button type="button" id="masterPlay">play/pause</button>
+            <button type="button" id="next">Next</button>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="100px" alt="Playing Gif" id="gif"> <span id="masterSongName">ik dard sabhi ko..</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="spotifyScript.js"></script>
+</body>
+</html>
